@@ -35,7 +35,6 @@ The full syntax for all of the properties that are available to the **apt_packag
      options                    String
      package_name               String, Array # defaults to 'name' if not specified
      provider                   Chef::Provider::Package::Apt
-     source                     String
      subscribes                 # see description
      timeout                    String, Integer
      version                    String, Array
@@ -157,11 +156,6 @@ This resource has the following properties:
    **Ruby Type:** Integer
 
    The retry delay (in seconds). Default value: ``2``.
-
-``source``
-   **Ruby Type:** String
-
-   Optional. The direct path to a dpkg or deb package.
 
 ``subscribes``
    **Ruby Type:** Symbol, 'Chef::Resource[String]'
